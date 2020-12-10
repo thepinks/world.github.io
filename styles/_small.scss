@@ -1,0 +1,209 @@
+@import './variables';
+
+/* Prevent adjustments of font size when orientation changes  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    background: $prime;
+    display: flex;
+    align-items: center;
+    h2 {
+        font-family: $font;
+        color: white;
+        margin-left: 10px;
+    }
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.locations-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: $second;
+    h2 {
+        font-family: $font;
+        color: $prime;
+        margin-left: 10px;
+    }
+}
+section {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+.location {
+    width: 100%;
+    background: $prime;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.golden-hotel {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background: url('../images/golden.jpg') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    h3 {
+        font-family: $font;
+        color: white;
+        margin: 0px 0px 10px 10px;
+        text-shadow: 0px 0px 10px black;
+    }
+}
+.santhiya {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background: url('../images/santhiya.jpg') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    h3 {
+        font-family: $font;
+        color: white;
+        margin: 0px 0px 10px 10px;
+        text-shadow: 0px 0px 10px black;
+    }
+}
+.singapore {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background: url('../images/marina.jpeg') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    h3 {
+        font-family: $font;
+        color: white;
+        margin: 0px 0px 10px 10px;
+        text-shadow: 0px 0px 10px black;
+    }
+}
+.bora {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background: url('../images/bora.jpg') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    h3 {
+        font-family: $font;
+        color: white;
+        margin: 0px 0px 10px 10px;
+        text-shadow: 0px 0px 10px black;
+    }
+}
+.info-wrap {
+    width: 90%;
+    display: flex;
+}
+.address {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    img {
+        width: 40px;
+        height: auto;
+    }
+    p {
+        font-family: $font;
+        font-size: 11pt;
+        color: $second;
+    }
+}
+.phone {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+        width: 40px;
+        height: auto;
+    }
+    p {
+        font-family: $font;
+        font-size: 11pt;
+        color: $second;
+    }
+}
+
+
+
+nav {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    button {
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $second;
+        border: solid 1px $prime;
+        img {
+            width: 30px;
+            height: auto;
+        }
+        #location-blue {
+            width: 22px;
+            height: auto;
+        }
+        h4 {
+            margin: 0;
+            margin-top: 6px;
+            font-family: $font;
+            color: $prime;
+            font-size: 11pt;
+        }
+    }
+    #active {
+        background: darken($second, 15%);
+    }
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
